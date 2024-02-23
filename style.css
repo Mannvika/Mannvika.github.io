@@ -2,8 +2,8 @@
     position: relative;
     min-height: 100vh;
     display: flex;
-    justify-content:  center;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
     background-color: #212020;
 }
 
@@ -12,7 +12,8 @@
     background-color: #212020;
     position: fixed;
     top: 0; 
-    width: 100%; 
+    width: 100%;
+    z-index: 1; 
   }
   
   .navbar a {
@@ -33,18 +34,24 @@
 
 .Frame1{
     position: relative;
-    bottom: 1%;
-    left: 0;
-    right: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 0;
-    height: 25%;
+    height: 50%;
+    max-width: 100%;
+    margin-top: 27%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     margin-bottom: 3%;
+    /*border: 2px solid #ffffff;*/
+    z-index: 0; 
 }
 
 .ProfileContainer{
+    /*border: 2px solid #ffffff;*/
+    display: flex;
     align-items: center;
 }
 
@@ -60,10 +67,20 @@
 .Arrow{
     position: relative;
     width: 10%;
-    margin-left: 50%;
+    margin-bottom: 9%;
     transform: rotate(180deg);
     align-self: flex-end;
     filter: brightness(0) invert(1);
+}
+
+.ArrowText{
+    position: relative;
+    font-family: Roboto, sans-serif;
+    font-size: 4.3vw;
+    margin-left: 17%;
+    font-weight: 500;
+    color: #FAFAFA;
+    text-align: center;
 }
 
 .Name{
