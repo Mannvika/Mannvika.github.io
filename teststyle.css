@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    background-color: #212020;
+    background-color: #1E1E1E;
     border: 2px solid #ffffff;
 }
 
@@ -50,6 +50,34 @@
     height: auto;
 }
 
+.ClassColor{
+    color:#88C6B0;
+}
+
+.VarNameColor{
+    color:#B6DBFB;
+}
+
+.StringColor{
+    color: #BC937B;
+}
+
+.NumberColor{
+    color: #BDCDAA;
+}
+
+.PinkBracket{
+    color: #C079D3;
+}
+
+.YellowBracket{
+    color: #F1D73C;
+}
+
+.CommentColor{
+    color: #7B975A;
+}
+
 .ClassContainer{
     float: left;
     max-width: auto;
@@ -58,8 +86,8 @@
 }
 
 .Class{
-    font-family: 'Courier New', Courier, monospace, sans-serif;
-    font-size: 5vh;
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    font-size: 1vw;
     color: #FAFAFA;
     text-align: left;
 }
@@ -70,12 +98,17 @@
 
 @media (max-width: 768px) {
     .Body {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .Class,
     .ProfileContainer {
         max-width: 100%;
+    }
+
+    .Class{
+        font-size: calc(100vw / 80);
+        font-size-adjust: 0.5;
     }
 
     .ProfileContainer{
