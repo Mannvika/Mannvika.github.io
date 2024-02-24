@@ -1,9 +1,7 @@
 .Body{
-    position: relative;
-    min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
     background-color: #212020;
 }
 
@@ -16,7 +14,7 @@
     z-index: 1; 
   }
   
-  .navbar a {
+.navbar a {
     float: left;
     display: block;
     color: #f2f2f2;
@@ -26,61 +24,32 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
+}
   
-  .main {
+.main {
     margin-top: 30px;
-  }
-
-.Frame1{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 0;
-    height: 50%;
-    max-width: 100%;
-    margin-top: 27%;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    margin-bottom: 3%;
-    /*border: 2px solid #ffffff;*/
-    z-index: 0; 
 }
 
-.ProfileContainer{
-    /*border: 2px solid #ffffff;*/
+.Class, .ProfileContainer{
+    flex: 1;
+    max-width: 50%;
+    margin-top: 100px;
+    border: 2px solid #ffffff;
+}
+
+.ProfileContainer {
+    max-width: 50%;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
 }
 
 .ProfileImage{
-    width: 28%;
-    margin-top: 5px;
-    margin-left: 20px;
-    border-radius: 50%;
-    box-shadow: -0.75vw 0.75vw #33CCCC;
-    position: relative;
-}
-
-.Arrow{
-    position: relative;
-    width: 10%;
-    margin-bottom: 9%;
-    transform: rotate(180deg);
-    align-self: flex-end;
-    filter: brightness(0) invert(1);
-}
-
-.ArrowText{
-    position: relative;
-    font-family: Roboto, sans-serif;
-    font-size: 4.3vw;
-    margin-left: 17%;
-    font-weight: 500;
-    color: #FAFAFA;
-    text-align: center;
+    width: 75%;
+    height: auto;
 }
 
 .Name{
@@ -89,7 +58,6 @@
     font-weight: 750;
     color: #FAFAFA;
     margin-bottom: 0;
-    margin-top: auto;
     text-align: left;
 }
 
@@ -123,4 +91,19 @@
     color: transparent;
     font-size: 4vw;
     margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .Body {
+        flex-direction: column;
+    }
+
+    .Class,
+    .ProfileContainer {
+        max-width: 100%;
+    }
+
+    .ProfileContainer{
+        margin-top: 0;
+    }
 }
