@@ -3,12 +3,12 @@
     flex-wrap: wrap;
     align-items: flex-start;
     background-color: #1E1E1E;
-    border: 2px solid #ffffff;
+    /*border: 2px solid #ffffff;*/
 }
 
 .navbar {
     overflow: hidden;
-    background-color: #212020;
+    background-color: #131313;
     position: fixed;
     top: 0; 
     width: 100%;
@@ -39,15 +39,22 @@ a {
 .ClassContainer, .ProfileContainer{
     flex: 1;
     margin-top: 100px;
-    border: 2px solid #ffffff;
+    /*border: 2px solid #ffffff;*/
+}
+
+.ClassContainer{
+    width: 70%;
 }
 
 .ProfileContainer {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    align-self: flex-end;
+    text-align: center;
     margin-left: auto;
-    max-width: 35%;
+    margin-right: auto;
 }
+
 .ProfileImage{
     width: 100%;
     height: auto;
@@ -91,7 +98,7 @@ a {
 
 .Class{
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-    font-size: 1.06vw;
+    font-size: 1.16vw;
     color: #FAFAFA;
     text-align: left;
     width: 100%;
