@@ -2,7 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    background-color: #212020;
+    background-color: #1E1E1E;
+    border: 2px solid #ffffff;
 }
 
 .navbar {
@@ -30,67 +31,70 @@
     margin-top: 30px;
 }
 
-.Class, .ProfileContainer{
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.ClassContainer, .ProfileContainer{
     flex: 1;
-    max-width: 50%;
     margin-top: 100px;
     border: 2px solid #ffffff;
 }
 
 .ProfileContainer {
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    position: fixed;
-    top: 0;
-    right: 0;
+    align-self: flex-end;
+    margin-left: auto;
+    max-width: 35%;
 }
-
 .ProfileImage{
-    width: 75%;
+    width: 100%;
     height: auto;
 }
 
-.Name{
-    font-family: Roboto, sans-serif;
-    font-size: 6.5vw;
-    font-weight: 750;
+.ClassColor{
+    color:#88C6B0;
+}
+
+.VarNameColor{
+    color:#B6DBFB;
+}
+
+.StringColor{
+    color: #BC937B;
+}
+
+.NumberColor{
+    color: #BDCDAA;
+}
+
+.PinkBracket{
+    color: #C079D3;
+}
+
+.YellowBracket{
+    color: #F1D73C;
+}
+
+.CommentColor{
+    color: #7B975A;
+}
+
+.FunctionColor{
+    color: #DBDBAE;
+}
+
+.ClassContainer{
+    float: left;
+}
+
+.Class{
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    font-size: 1.06vw;
     color: #FAFAFA;
-    margin-bottom: 0;
     text-align: left;
-}
-
-.Title{
-    font-family: Roboto, sans-serif;
-    font-weight: 450;
-    background-image: linear-gradient(313deg, rgba(255,204,0,1) 0%, rgba(255,102,0,1) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    font-size: 4vw;
-    margin-top: 0;
-}
-
-
-.Title2{
-    font-family: Roboto, sans-serif;
-    background-image: linear-gradient(313deg, rgba(170,0,181,1) 0%, rgba(56,0,255,1) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    font-size: 4vw;
-    margin-top: 0;
-}
-
-.Title3{
-    font-family: Roboto, sans-serif;
-    background-image: linear-gradient(313deg, rgba(119,0,181,1) 0%, rgba(255,0,21,1) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    font-size: 4vw;
-    margin-top: 0;
+    width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -98,12 +102,26 @@
         flex-direction: column;
     }
 
-    .Class,
     .ProfileContainer {
-        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .ProfileContainer{
-        margin-top: 0;
+    .ClassContainer,
+    .ProfileContainer {
+        width: 100%;
+    }
+
+    .ProfileImage{
+        width: 100%;
+    }
+
+    .Class{
+        max-width: 100%;
+        font-size: calc(100vw/62);
     }
 }
