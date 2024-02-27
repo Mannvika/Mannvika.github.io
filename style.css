@@ -1,134 +1,57 @@
-.Body{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-color: #1E1E1E;
-    /*border: 2px solid #ffffff;*/
+body{
+    background-color: #EDF2F4;
 }
 
-.navbar {
-    overflow: hidden;
-    background-color: #131313;
-    position: fixed;
-    top: 0; 
-    width: 100%;
-    z-index: 1; 
-  }
-  
-.navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    font-family: Roboto, sans-serif;
-    font-size: 2vw;
-    font-weight: 800;
-    text-align: center;
-    padding: 14px 16px;
+header{
+   display: flex;
+   justify-content: flex-end; 
+   padding-right: 25px;
+}
+
+header a{
+    margin-left: 20px;
+}
+
+a{
     text-decoration: none;
 }
-  
-.main {
-    margin-top: 30px;
-}
 
-a {
+a:visited{
+    color: inherit;
     text-decoration: none;
-    color: white;
 }
 
-.ClassContainer, .ProfileContainer{
-    flex: 1;
-    margin-top: 100px;
-    /*border: 2px solid #ffffff;*/
-}
-
-.ClassContainer{
-    width: 70%;
-}
-
-.ProfileContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: auto;
+.bio{
     margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+    width: fit-content;
+    /*border: 3px solid green;*/
+    text-align: center;
+    padding: 10px;
 }
 
-.ProfileImage{
-    width: 100%;
-    height: auto;
+.bio h1, .bio h2{
+    margin-bottom: -50px;
 }
 
-.ClassColor{
-    color:#88C6B0;
+.bio img{
+    margin-top: 90px;
+    border-radius: 27px;
+    background: url(./headshot.png), lightgray 50% / cover no-repeat;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.VarNameColor{
-    color:#B6DBFB;
+.roboto-slab-medium {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
-.StringColor{
-    color: #BC937B;
-}
-
-.NumberColor{
-    color: #BDCDAA;
-}
-
-.PinkBracket{
-    color: #C079D3;
-}
-
-.YellowBracket{
-    color: #F1D73C;
-}
-
-.CommentColor{
-    color: #7B975A;
-}
-
-.FunctionColor{
-    color: #DBDBAE;
-}
-
-.ClassContainer{
-    float: left;
-}
-
-.Class{
-    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-    font-size: 1.16vw;
-    color: #FAFAFA;
-    text-align: left;
-    width: 100%;
-}
-
-@media (max-width: 768px) {
-    .Body {
-        flex-direction: column;
-    }
-
-    .ProfileContainer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .ClassContainer,
-    .ProfileContainer {
-        width: 100%;
-    }
-
-    .ProfileImage{
-        width: 100%;
-    }
-
-    .Class{
-        max-width: 100%;
-        font-size: calc(100vw/62);
-    }
-}
+.roboto-slab {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
