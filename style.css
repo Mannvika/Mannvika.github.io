@@ -58,20 +58,19 @@ a:visited{
     /*border: 3px solid black;*/
 }
 
-.project-main button img{
-    height: 6vw;
-    width: auto;
+.project-main button img, button{
+    align-self: center;
+    height: 7vw;
+    width: 7vw;
 }
 
 .project-main button{
-    border: none;
     background: none;
-    margin: 50px;
+    border: none;
 }
 
 .project-main button:hover{
     transform: scale(1.2);
-    margin: 50px;
 }
 
 .project-header, .project-footer{
@@ -83,11 +82,17 @@ a:visited{
 }
 
 .project-header{
-    margin-bottom: 4%;
+    margin-bottom: 2%;
 }
 
 .project-footer{
-    margin-top: 4%;
+    margin-top: -4%;
+    margin-bottom: 8%;
+    /*border: 3px solid red;*/
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .project-header h2{
@@ -96,6 +101,8 @@ a:visited{
 }
 
 .project-container{
+    margin-left: 2%;
+    margin-right: 2%;
     width: fit-content;
 }
 
