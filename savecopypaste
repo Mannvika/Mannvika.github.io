@@ -1,12 +1,23 @@
-<h1 class="roboto-slab-medium" style="color: #2B2D42; font-size: 78px;">Projects</h1>
 <div class="projects-section-container">
   <div class="project-container">
+    <div class="project-header">
+      <h2 class="titles">Test</h2>
+    </div>
     <img src="LinkedPng.png" alt="Project 1 png">
-    <p class="description">some cool ass description</p>
   </div>
-  <h1 class="titles">Linked</h1>
   <div class="project-container">
+    <div class="project-header">
+      <h2 class="titles">Test</h2>
+      <img class="icon" src="CSharp.svg" alt="CSharp">
+      <img class="icon" src="Unity.svg" alt="Unity">
+      <img class="icon" src="Python.svg" alt="Python">
+    </div>
     <img src="LinkedPng.png" alt="Project 1 png">
   </div>
-  <h1 class="titles">Linked</h1>
+  <div class="project-container">
+    <div class="project-header">
+      <h2 class="titles">Test</h2>
+    </div>
+    <img src="LinkedPng.png" alt="Project 1 png">
+  </div>
 </div>
