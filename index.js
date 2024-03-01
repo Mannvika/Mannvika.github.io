@@ -11,7 +11,7 @@ function plusDivs(direction) {
     {
       title: "Linked",
       iconSrcs: ["images/icons/Unity.svg", "images/icons/CSharp.svg"],
-      contentSrcs: ["images/LinkedPng.png", "images/LinkedPng.png"],
+      contentSrcs: ["images/Linked/LinkedLogo.png", "images/Linked/LinkedGraphic1.png", "images/Linked/LinkedGraphic2.png", "images/Linked/LinkedGraphic3.png"],
       description: "1st place overall game jam winner refactored to become a fully developed Android/IOS game (Currently Unavailable)."
     },
     {
@@ -50,6 +50,5 @@ function plusDivs(direction) {
   const nextProject = projects[nextIndex];
   title.textContent = nextProject.title;
   icons.innerHTML = nextProject.iconSrcs.map(iconSrc => `<img src="${iconSrc}">`).join('');
-  content.innerHTML = nextProject.contentSrcs.map(contentSrc => `<img src="${contentSrc}" style="width: 50%;">`).join('');
-  description.textContent = nextProject.description;
+  content.innerHTML = nextProject.contentSrcs.map(contentSrc => `<div class="content-item"><img src="${contentSrc}"></div>`).join('');  description.textContent = nextProject.description;
 }
