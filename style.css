@@ -1,10 +1,12 @@
 body{
     background-color: #EDF2F4;
+    margin: 0;
 }
 
 header{
    display: flex;
    justify-content:space-between; 
+   margin-top: 20px;
    padding-right: 25px;
 }
 
@@ -24,18 +26,18 @@ a:visited{
 .bio{
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: -1%;
-    margin-top: -2%;
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
 }
 
-.bio h1, .bio h2{
+.bio-name
+{
+    color: #2B2D42;
+    font-size: 96px;
     margin-bottom: -2%;
 }
 
 .bio img{
-    margin-top: 90px;
     border-radius: 27px;
     background: url(./headshot.png), lightgray 50% / cover no-repeat;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -44,117 +46,90 @@ a:visited{
 .projects{
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: -1%;
-    margin-top: -2%;
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
+    background-color: #2B2D42;
 }
 
-.project-main{
+.projects-title{
+    color: #EDF2F4;
+    font-size: 96px;
+    padding-top: 50px;
+}
+
+.projects-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1000px, 1fr));
+    gap: 20px 0px;
+}
+
+.projects-container{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    border-radius: 25px;
+    height: 425px;
+    width: 800px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /*border: 3px solid black;*/
-}
-
-.project-main button img, button{
-    align-self: center;
-    height: 7vw;
-    width: 7vw;
-}
-
-.project-main button{
-    background: none;
-    border: none;
-}
-
-.project-main button:hover{
-    transform: scale(1.2);
-}
-
-.project-header, .project-footer{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    /*border: 3px solid red;*/
+    flex-direction: column;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 3));
+    background-color: #EDF2F4;
 }
 
 .project-header{
-    margin-bottom: 2%;
+    display: flex;
+    /*border: 2px solid red;*/
+    justify-content: space-between;
 }
 
-.project-footer{
-    margin-bottom: 8%;
-    /*border: 3px solid red;*/
-    text-align: center;
+.project-content-title{
+    padding-left: 12px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+    font-size: 40px;
+}
+
+.icons{
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-.project-header h2{
-    margin: 0;
-    /*border: 3px solid red;*/
-}
-
-.project-container{
-    margin-left: 2%;
-    margin-right: 2%;
-    width: fit-content;
-}
-
-.icons{ 
-    margin: 0;
-    display: flex;
-    height: 50%;
-    flex-direction: row;
-    /*border: 3px solid blue;*/
 }
 
 .icons img{
-    height: 4vw;
-    margin-left: 20px;
-    width: auto;
+    padding-left: 20px;
+    width: 50px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    height: auto;
 }
 
-.project-content{
-    display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(auto, 1fr));   
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1%;
-    min-height: 20vw;
-    max-height: fit-content;
-    /*border: 3px solid yellow;*/
-}
-
-.content-item{
+.project-main{
+    /*border: 2px solid red;*/
     display: flex;
-    justify-content: center;
+    text-align: left;
 }
 
-.project-content img {
-    min-height: 30vh;
-    max-height: 30vh; 
-    width: auto; 
+.project-main img{
+    border-radius: 25px;
+    margin-right: 25px;
+    width: 250px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 3));
 }
 
-.curved {
-    position: relative;
-    background: #2c3e50;
-    height: 25vw;
-    border-bottom-left-radius: 50% 5%;
-    border-bottom-right-radius: 50% 5%;
+.project-description{
+    font-size: 28px;
 }
 
-.roboto-slab-medium, .title {
+.project-link
+{
+    align-self:last baseline;
+}
+
+.roboto-slab-medium, .bio-name, .projects-title, .project-description{
   font-family: "Roboto Slab", serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
 }
 
-.roboto-slab, .description{
+.roboto-slab, .bio-title, .project-content-title{
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
     font-weight: 400;
