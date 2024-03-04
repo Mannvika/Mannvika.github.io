@@ -8,6 +8,7 @@ header{
    justify-content:space-between; 
    margin-top: 20px;
    padding-right: 25px;
+   margin-bottom: -5%;
 }
 
 header a{
@@ -51,7 +52,7 @@ a:visited{
     background-color: #2B2D42;
 }
 
-.projects-title{
+.section-title{
     color: #EDF2F4;
     font-size: 96px;
     padding-top: 50px;
@@ -122,7 +123,15 @@ a:visited{
     align-self:last baseline;
 }
 
-.roboto-slab-medium, .bio-name, .projects-title, .project-description{
+.experience{
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #EDF2F4;
+}
+
+.roboto-slab-medium, .bio-name, .section-title, .project-description{
   font-family: "Roboto Slab", serif;
   font-optical-sizing: auto;
   font-weight: 500;
