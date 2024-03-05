@@ -25,15 +25,20 @@ a:visited {
 }
 
 .bio {
+    display: flex;
+    flex-direction: column;
     margin-right: auto;
     margin-left: auto;
     min-height: 100vh;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .bio-name {
     color: #2B2D42;
     font-size: 4vw;
+    margin-top: -10vh;
     margin-bottom: -2%;
 }
 
@@ -55,8 +60,9 @@ a:visited {
 }
 
 .projects {
-    margin-right: auto;
-    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     min-height: 100vh;
     text-align: center;
     background-color: #2B2D42;
@@ -79,7 +85,7 @@ a:visited {
     margin: 0 auto;
     padding: 1.4vw;
     border-radius: 2.5vw;
-    min-height: 10vh;
+    min-height: 5vh;
     max-height: fit-content;
     width: 70%;
     display: flex;
@@ -94,10 +100,6 @@ a:visited {
     padding: 0;
     margin-bottom: 1vw;
     align-items: center;
-}
-
-.education-header{
-    margin-bottom: 6vh;
 }
 
 .project-content-title {
@@ -146,8 +148,9 @@ a:visited {
 }
 
 .experience {
-    margin-right: auto;
-    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     min-height: 100vh;
     text-align: center;
     background-color: #EDF2F4;
@@ -193,6 +196,7 @@ a:visited {
 }
 
 .education{
+    justify-content: center;
     min-height: 100vh;
     text-align: center;
     background-color: #2B2D42;
@@ -203,7 +207,7 @@ a:visited {
     margin: 0 auto;
     padding: 2.5vw;
     border-radius: 2.5vw;
-    min-height: 60vh;
+    min-height: fit-content;
     max-height: fit-content;
     width: 25%;
     display: flex;
