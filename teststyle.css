@@ -88,12 +88,16 @@ a:visited {
     background-color: #EDF2F4;
 }
 
-.project-header {
+.project-header, .education-header {
     display: flex;
     justify-content: space-between;
     padding: 0;
     margin-bottom: 1vw;
     align-items: center;
+}
+
+.education-header{
+    margin-bottom: 6vh;
 }
 
 .project-content-title {
@@ -188,11 +192,66 @@ a:visited {
     font-size: 0.7vw;
 }
 
+.education{
+    min-height: 100vh;
+    text-align: center;
+    background-color: #2B2D42;
+}
+
+.education-container{
+    background-color: #EDF2F4;
+    margin: 0 auto;
+    padding: 2.5vw;
+    border-radius: 2.5vw;
+    min-height: 60vh;
+    max-height: fit-content;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+}
+
+.education-title{
+    font-size: 1.4vw;
+    color: #2B2D42;
+    text-decoration: underline;
+}
+
+.education-subtitle{
+    font-size: 1vw;
+}
+
+.major{
+    grid-row:1/span 2;
+}
+
+.education-course-title{
+    font-size: 1.3vw;
+    margin: 0;
+    text-align: left;
+}
+
+.das{
+    color: #0AA09E;
+}
+
+.math{
+    color: red;
+}
+
+.line-break{
+    border: solid 1px #2B2D42;
+    width: 100%;
+}
+
 .roboto-slab-medium,
 .bio-name,
 .section-title,
 .experience-title,
-.project-description {
+.project-description,
+.education-title,
+.education-course-title,
+.education-subtitle {
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
     font-weight: 500;
