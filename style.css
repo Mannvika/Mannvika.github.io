@@ -84,7 +84,7 @@ a:visited {
 
 .projects-container {
     margin: 0 auto;
-    padding: 1.4vw;
+    padding: 2.5vw;
     border-radius: 2.5vw;
     min-height: 5vh;
     max-height: fit-content;
@@ -100,6 +100,7 @@ a:visited {
     justify-content: space-between;
     padding: 0;
     align-items: center;
+    border: solid red 2px;
 }
 
 .education-header{
@@ -158,7 +159,6 @@ a:visited {
 .experience {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     min-height: 100vh;
     text-align: center;
     background-color: #EDF2F4;
@@ -166,16 +166,17 @@ a:visited {
 
 .experience-content{
     display: flex;
+    gap: 1vw;
+    justify-content: center;
 }
 
 .experience-container {
     background-color: #2B2D42;
-    margin: 0 auto;
-    padding: 1.4vw;
+    padding: 2.5vw;
     border-radius: 2.5vw;
     min-height: fit-content;
     max-height: fit-content;
-    width: 30%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
@@ -183,7 +184,8 @@ a:visited {
 
 .experience-title{
     color: #EDF2F4;
-    font-size: 1.4vw;
+    font-size: 1.2vw;
+    text-decoration: underline;
 }
 
 .experience-role-title{
@@ -261,6 +263,10 @@ a:visited {
 .line-break{
     border: solid 0.1vw #2B2D42;
     width: 100%;
+}
+
+.line-break-experience{
+    border: solid 0.1vw #EDF2F4;
 }
 
 .roboto-slab-medium,
@@ -357,6 +363,7 @@ a:visited {
 
     .experience-content{
         flex-direction: column;
+        align-items: center;
     }
     
     .experience-container {
@@ -414,8 +421,12 @@ a:visited {
         width: 3vw;
     }
     
-    .line-break{
-        border: solid 0.1vw #2B2D42;
+    .line-break, .line-break-experience{
+        border: solid 0.2vw #2B2D42;
         width: 100%;
+    }
+
+    .line-break-experience{
+        border: solid 0.2vw #EDF2F4;
     }
 }
