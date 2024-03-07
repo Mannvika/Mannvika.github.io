@@ -71,7 +71,7 @@ a:visited {
 .section-title {
     color: #EDF2F4;
     font-size: 3.3vw;
-    padding-bottom: 5%;
+    padding-bottom: 2vh;
     text-decoration: underline;
     margin: 0;
 }
@@ -100,7 +100,8 @@ a:visited {
     justify-content: space-between;
     padding: 0;
     align-items: center;
-    border: solid red 2px;
+    max-height: fit-content;
+    margin: 0;
 }
 
 .education-header{
@@ -123,7 +124,7 @@ a:visited {
 
 .icons img, .icons-education img {
     padding-left: 1vw;
-    width: 2vw;
+    width: 1.8vw;
     height: auto;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -159,9 +160,10 @@ a:visited {
 .experience {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     min-height: 100vh;
     text-align: center;
-    background-color: #EDF2F4;
+    background-color: #2B2D42;
 }
 
 .experience-content{
@@ -171,8 +173,8 @@ a:visited {
 }
 
 .experience-container {
-    background-color: #2B2D42;
-    padding: 2.5vw;
+    background-color: #EDF2F4;
+    padding: 2.3vw;
     border-radius: 2.5vw;
     min-height: fit-content;
     max-height: fit-content;
@@ -182,26 +184,37 @@ a:visited {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
 }
 
+.experience-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.experience-img{
+    margin: 0 auto;
+    width: 10vw;
+}
+
 .experience-title{
-    color: #EDF2F4;
     font-size: 1.2vw;
     text-decoration: underline;
 }
 
 .experience-role-title{
-    color: #EDF2F4;
-    font-size: 1.3vw;
+    margin: 0;
+    font-size: 1vw;
 }
 
 .experience-date{
     text-align: left; 
-    font-size: 0.8vw
+    margin: 0;
+    font-size: 0.8vw;
 }
 
 .experience-description{
     text-align: left; 
-    color: #EDF2F4;
-    font-size: 0.7vw;
+    font-size: 0.6vw;
 }
 
 .education{
@@ -265,10 +278,6 @@ a:visited {
     width: 100%;
 }
 
-.line-break-experience{
-    border: solid 0.1vw #EDF2F4;
-}
-
 .roboto-slab-medium,
 .bio-name,
 .section-title,
@@ -290,10 +299,10 @@ a:visited {
 }
 
 .roboto-slab,
-
 .bio-desc,
 .experience-role-title,
 .experience-description,
+.experience-date,
 .project-description
 {
     font-family: "Roboto Slab", serif;
@@ -327,7 +336,7 @@ a:visited {
     
     .section-title {
         font-size: 6vw;
-        margin-bottom: 4vh;
+        margin-bottom: 2vh;
     }
     
     .projects-content {
