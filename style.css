@@ -16,12 +16,18 @@ header a {
 }
 
 a {
+    font-size: 3vw;
+    color: black;
     text-decoration: underline;
 }
 
+header a img{
+    width: 3vw;
+}
+
+
 a:visited {
     color: inherit;
-    text-decoration: none;
 }
 
 .bio {
@@ -47,7 +53,7 @@ a:visited {
 }
 
 .bio-desc{
-    color: #D14AE0; 
+    color: #2B2D42; 
     font-size: 1.3vw;
 }
 
@@ -174,7 +180,10 @@ a:visited {
 
 .experience-container {
     background-color: #EDF2F4;
-    padding: 2.3vw;
+    padding-left: 1.7vw;
+    padding-right: 1.7vw;
+    padding-bottom: 0.7vw;
+    padding-top: 1vw;
     border-radius: 2.5vw;
     min-height: fit-content;
     max-height: fit-content;
@@ -186,14 +195,19 @@ a:visited {
 
 .experience-footer{
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
     height: 100%;
 }
 
 .experience-img{
     margin: 0 auto;
-    width: 10vw;
+    padding: 0;
+    width: 6vw;
+}
+
+.experience a{
+    width: fit-content;
 }
 
 .experience-title{
@@ -203,7 +217,8 @@ a:visited {
 
 .experience-role-title{
     margin: 0;
-    font-size: 1vw;
+    font-size: 1.2vw;
+    text-decoration: underline;
 }
 
 .experience-date{
@@ -214,7 +229,7 @@ a:visited {
 
 .experience-description{
     text-align: left; 
-    font-size: 0.6vw;
+    font-size: 0.73vw;
 }
 
 .education{
@@ -260,11 +275,11 @@ a:visited {
 }
 
 .das{
-    color: #9F4AE0;
+    color: #444870;
 }
 
 .math{
-    color: #6E4AE0;
+    color: #F0591A;
 }
 
 .education-logo{
@@ -276,6 +291,10 @@ a:visited {
 .line-break{
     border: solid 0.1vw #2B2D42;
     width: 100%;
+}
+
+.divider{
+    min-height: 15vh;
 }
 
 .roboto-slab-medium,
@@ -398,7 +417,7 @@ a:visited {
     }
     
     .education{
-        justify-content: center;
+        justify-content: flex-start;
         min-height: 100vh;
         text-align: center;
         background-color: #2B2D42;
@@ -428,6 +447,10 @@ a:visited {
 
     .icons-education img{
         width: 3vw;
+    }
+
+    .divider{
+        min-height: 5vh;
     }
     
     .line-break, .line-break-experience{
