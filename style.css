@@ -157,10 +157,9 @@ a:visited {
 
 .project-link img{
     width: 2.4vw;
-    position: fixed;
+    position: absolute;
     bottom: 5%;
     right: 2%;
-    align-self: last baseline;
 }
 
 .experience {
@@ -294,6 +293,7 @@ a:visited {
 }
 
 .divider{
+    background: #2B2D42;
     min-height: 15vh;
 }
 
@@ -306,6 +306,7 @@ a:visited {
 .education-course-title,
 .education-subtitle,
 .project-content-title,
+.experience-role-title,
 .bold {
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
@@ -319,7 +320,6 @@ a:visited {
 
 .roboto-slab,
 .bio-desc,
-.experience-role-title,
 .experience-description,
 .experience-date,
 .project-description
@@ -328,12 +328,6 @@ a:visited {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-}
-
-.end {
-    position: relative;
-    background: #2c3e50;
-    height: 50vh;
 }
 
 @media(max-aspect-ratio: 3/2) {
@@ -375,7 +369,7 @@ a:visited {
     .icons img {
         width: 3vw;
     }
-    
+
     .project-main img {
         border-radius: 3vw;
         width: 15vw;
@@ -418,7 +412,8 @@ a:visited {
     
     .education{
         justify-content: flex-start;
-        min-height: 100vh;
+        min-height: fit-content;
+        padding-bottom: 10vh;
         text-align: center;
         background-color: #2B2D42;
     }
@@ -451,6 +446,143 @@ a:visited {
 
     .divider{
         min-height: 5vh;
+    }
+    
+    .line-break, .line-break-experience{
+        border: solid 0.2vw #2B2D42;
+        width: 100%;
+    }
+
+    .line-break-experience{
+        border: solid 0.2vw #EDF2F4;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    a {
+        font-size: 5vw;
+    }
+    
+    header a img{
+        width: 5vw;
+    }
+
+    .bio-name {
+        font-size: 10vw;
+    }
+    
+    .bio-titles{
+        font-size: 5vw;
+    }
+    
+    .bio-desc{
+        font-size: 4vw;
+    }
+    
+    .bio img {
+        width: 50%;
+    }
+    
+    .section-title {
+        font-size: 10vw;
+        margin-bottom: 2vh;
+    }
+    
+    .projects-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projects-container{
+        margin-bottom: 2vh;
+        width: 75%;
+        padding: 5vw;
+    }
+    
+    .project-content-title {
+        font-size: 4vw;
+    }
+    
+    .icons img {
+        width: 5vw;
+    }
+
+    .project-main img {
+        border-radius: 3vw;
+        width: 20vw;
+    }
+    
+    .project-description {
+        font-size: 2.4vw; 
+    }
+    
+    .project-link img{
+        width: 5vw;
+    }
+
+    .experience-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .experience-container {
+        width: 90%;
+        margin-bottom: 3vh;
+    }
+    
+    .experience-title{
+        font-size: 4.3vw;
+    }
+    
+    .experience-role-title{
+        font-size: 3.5vw;
+    }
+    
+    .experience-date{
+        text-align: left; 
+        font-size: 2.2vw;
+    }
+    
+    .experience-description{
+        font-size: 2vw;
+    }
+    
+    .education{
+        justify-content: flex-start;
+        min-height: fit-content;
+        padding-bottom: 10vh;
+        text-align: center;
+        background-color: #2B2D42;
+    }
+    
+    .education-container{
+        display: flex;
+        justify-content: center;
+        min-height: fit-content;
+        max-height: fit-content;
+        width: 80%;
+    }
+    
+    .education-title{
+        font-size: 6vw;
+    }
+    
+    .education-subtitle{
+        font-size: 3vw;
+    }
+    
+    .education-course-title{
+        font-size: 3.2vw;
+        margin: 0;
+        text-align: left;
+    }
+
+    .icons-education img{
+        width: 3.6vw;
+    }
+
+    .divider{
+        min-height: 1vh;
     }
     
     .line-break, .line-break-experience{
