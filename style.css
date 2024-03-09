@@ -45,7 +45,6 @@ a:visited {
     font-size: 4vw;
     margin-top: -10vh;
     margin-bottom: -2%;
-    text-decoration: underline;
 }
 
 .bio-titles{
@@ -78,7 +77,6 @@ a:visited {
     color: #EDF2F4;
     font-size: 3.3vw;
     padding-bottom: 2vh;
-    text-decoration: underline;
     margin: 0;
 }
 
@@ -91,7 +89,6 @@ a:visited {
 .projects-container {
     margin: 0 auto;
     padding: 2.5vw;
-    border-radius: 2.5vw;
     min-height: 5vh;
     max-height: fit-content;
     width: 60%;
@@ -118,7 +115,6 @@ a:visited {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
     font-size: 1.6vw;
     margin: 0;
-    text-decoration: underline;
 }
 
 
@@ -183,7 +179,6 @@ a:visited {
     padding-right: 1.7vw;
     padding-bottom: 0.7vw;
     padding-top: 1vw;
-    border-radius: 2.5vw;
     min-height: fit-content;
     max-height: fit-content;
     width: 25%;
@@ -211,13 +206,11 @@ a:visited {
 
 .experience-title{
     font-size: 1.2vw;
-    text-decoration: underline;
 }
 
 .experience-role-title{
     margin: 0;
     font-size: 1.2vw;
-    text-decoration: underline;
 }
 
 .experience-date{
@@ -244,7 +237,6 @@ a:visited {
     background-color: #EDF2F4;
     margin: 0 auto;
     padding: 2.5vw;
-    border-radius: 2.5vw;
     min-height: fit-content;
     max-height: fit-content;
     width: 25%;
