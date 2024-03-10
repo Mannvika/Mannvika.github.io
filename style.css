@@ -9,6 +9,10 @@ body {
     flex-direction: column;
 }
 
+.mobile, .experience-mobile{
+    display: none;
+}
+
 h1, p{
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
@@ -287,4 +291,145 @@ h1{
     .experience-description{
         font-size: 0.7rem;
     }
+}
+
+@media only screen and (max-width: 600px){
+    .desktop{
+        display: none;
+    }
+
+    .mobile, .experience-mobile{
+        display: contents;
+    }
+
+    .bio-container{
+        background-color: #15616D;
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+
+    .main-section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-section h1 {
+        font-size: 3rem;
+    }
+
+    .main-section img {
+        width: 50%;
+    }
+
+    .main-section p{
+        font-size: 1rem;
+    }
+
+    .main-section span{
+        font-weight: 700;
+    }
+
+    .titles h1{
+        font-size: 1.6rem;
+        text-wrap:wrap;
+    }
+
+    .class-titles h1{
+        font-size: 1.2rem;
+    }
+
+    .icons{
+        display: flex;
+        gap: 5rem;
+        justify-content: center;
+    }
+    
+    .icons img{
+        width: 2.4rem;
+        filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.25));
+    }
+
+    .education-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-height: fit-content;
+        height: 75%;
+        background-color: #15616D;
+        position: relative;
+        padding-bottom: 21%;
+    }
+
+    .education-container p{
+        font-size: 1.3rem;
+        margin-bottom: 0;
+    }
+
+    .project-content{
+        width: 100%;
+        max-height: fit-content;
+        padding-top: 25%;
+        padding-bottom: 25%;
+        background-color: #15616D;
+    }
+
+    .project-content p{
+        margin: 1rem;
+    }
+
+    .experience-mobile{
+        min-height: fit-content;
+        padding-bottom: 25%;
+    }
+
+    .experience-content{
+        flex-direction: column;
+        align-items: center;
+        gap: 1vw;        
+    }
+    
+    .experience-container {
+        width: 90%;
+    }
+    
+    .experience-img{
+        width: 3rem;
+    }
+    
+    .sase-img{
+        width: 6rem;
+    }
+    
+    .experience-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .experience-container {
+        width: 90%;
+        margin-bottom: 3vh;
+    }
+    
+    .experience-title{
+        font-size: 4.3vw;
+    }
+    
+    .experience-role-title{
+        font-size: 3.5vw;
+    }
+    
+    .experience-date{
+        text-align: left; 
+        font-size: 2.2vw;
+    }
+    
+    .experience-description{
+        font-size: 2vw;
+    }
+
+    .experience-icons img{
+        width: 1rem;
+    }
+
 }
