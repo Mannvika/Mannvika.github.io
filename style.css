@@ -304,8 +304,6 @@ h1{
 
     .bio-container{
         background-color: #15616D;
-        padding-top: 15%;
-        padding-bottom: 15%;
     }
 
     .main-section{
@@ -358,7 +356,6 @@ h1{
         height: 75%;
         background-color: #15616D;
         position: relative;
-        padding-bottom: 21%;
     }
 
     .education-container p{
@@ -369,8 +366,6 @@ h1{
     .project-content{
         width: 100%;
         max-height: fit-content;
-        padding-top: 25%;
-        padding-bottom: 25%;
         background-color: #15616D;
     }
 
@@ -378,9 +373,8 @@ h1{
         margin: 1rem;
     }
 
-    .experience-mobile{
+    .experience{
         min-height: fit-content;
-        padding-bottom: 25%;
     }
 
     .experience-content{
@@ -404,11 +398,6 @@ h1{
     .experience-content{
         flex-direction: column;
         align-items: center;
-    }
-    
-    .experience-container {
-        width: 90%;
-        margin-bottom: 3vh;
     }
     
     .experience-title{
