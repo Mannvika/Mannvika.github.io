@@ -1,170 +1,166 @@
-body {
-    background-color: #EDF2F4;
+html, body {
+    height: 100%;
     margin: 0;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2vh;
-    margin-bottom: -2vh;
-    padding-right: 2vw;
-}
-
-header a {
-    margin-left: 2vw;
-}
-
-a {
-    font-size: 3vw;
-    color: black;
-    text-decoration: underline;
-}
-
-header a img{
-    width: 3vw;
-}
-
-
-a:visited {
-    color: inherit;
-}
-
-.bio {
+body {
+    margin: 0;
     display: flex;
     flex-direction: column;
-    margin-right: auto;
-    margin-left: auto;
+}
+
+h1, p{
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #001524;
+}
+
+h1{
+    font-weight: 700;
+}
+
+.main-section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FFECD1;
+    display: flex;
+    text-align: center;
+    position: relative;
+}
+
+.main-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+    min-height: 100%;
+    padding: 2rem;
+    max-height: fit-content; 
+    filter: drop-shadow(0px, 0px 8px rgba(0, 0, 0, 0.25));
+    background-color: #15616D;
+}
+
+.main-sidebar h1{
+    font-size: 3rem;
+    margin: 0;
+}
+
+.main-sidebar img{
+    width: 20rem;
+    filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.25));
+}
+
+.main-sidebar p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.main-sidebar span, .experience span, .experience h1{
+    font-weight: 600;
+}
+
+.top-right-icons{
+    margin-right: 20px;
+    margin-top: 20px;
+    display: flex;
+    gap: 35px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.top-left-icons{
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    gap: 35px;
+    flex-basis: 0;
+    align-items: center;
+    position: absolute;
+}
+
+.top-left-icons img, .top-right-icons a img{
+    width: 2rem;
+    flex-basis:0;
+    filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.25));
+}
+
+.titles, .class-titles{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.titles h1{
+    color: #001524;
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 5px;
+}
+
+.class-titles h1{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 5px;
+}
+
+.pictures{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  
+  .pictures img {
+    margin-top: 8px;
+    width: 40rem;
+    vertical-align: middle;
+  }
+
+.divider{
+    min-width: 100%;
+    min-height: 10vh;
+    background-color: #15616D;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     text-align: center;
-    justify-content: center;
+    background-color: #15616D;
+}
+
+.experience-main-title{
+    font-size: 2.8rem;
+}
+
+.icons{
+    display: flex;
+    margin: 0;
     align-items: center;
 }
 
-.bio-name {
-    font-size: 4vw;
-    margin-top: -10vh;
-    margin-bottom: -2%;
-}
-
-.bio-titles{
-    font-size: 2vw;
-}
-
-.bio-desc{
-    color: #2B2D42; 
-    font-size: 1.3vw;
-}
-
-.bio img {
-    border-radius: 3vw;
-    background: url(./headshot.png), lightgray 50% / cover no-repeat;
-    box-shadow: 0.5vw 1vw 1vw 0 rgba(0, 0, 0, 0.25);
-    width: 15%;
+.icons img{
+    padding-left: 1vw;
+    width: 1.5rem;
     height: auto;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
-    text-align: center;
-    background-color: #2B2D42;
-}
-
-.section-title {
-    color: #EDF2F4;
-    font-size: 3.3vw;
-    padding-bottom: 2vh;
-    margin: 0;
-}
-
-.projects-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-    gap: 2vh 0;
-}
-
-.projects-container {
-    margin: 0 auto;
-    padding: 2.5vw;
-    min-height: 5vh;
-    max-height: fit-content;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
-    background-color: #EDF2F4;
-}
-
-.project-header, .education-header {
+.experience-header{
     display: flex;
     justify-content: space-between;
     padding: 0;
     align-items: center;
     max-height: fit-content;
     margin: 0;
-}
-
-.education-header{
-    margin-bottom: 2vh;
-}
-
-.project-content-title {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
-    font-size: 1.6vw;
-    margin: 0;
-}
-
-
-.icons, .icons-education {
-    display: flex;
-    margin: 0;
-    align-items: center;
-}
-
-.icons img, .icons-education img {
-    padding-left: 1vw;
-    width: 1.8vw;
-    height: auto;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.icons-education img{
-    width: 1.3vw;
-}
-
-.project-main {
-    display: flex;
-    text-align: left;
-}
-
-.project-main img {
-    border-radius: 1vw;
-    margin-right: 1vw;
-    width: 9vw;
-    filter: drop-shadow(0px 0.5vw 0.5vw rgba(0, 0, 0, 0.3));
-}
-
-.project-description {
-    font-size: 1vw; 
-}
-
-.project-link img{
-    width: 2.4vw;
-    position: absolute;
-    bottom: 5%;
-    right: 2%;
-}
-
-.experience {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
-    text-align: center;
-    background-color: #2B2D42;
 }
 
 .experience-content{
@@ -174,17 +170,16 @@ a:visited {
 }
 
 .experience-container {
-    background-color: #EDF2F4;
+    background-color: #FFECD1;
     padding-left: 1.7vw;
     padding-right: 1.7vw;
     padding-bottom: 0.7vw;
     padding-top: 1vw;
     min-height: fit-content;
     max-height: fit-content;
-    width: 25%;
+    width: 35%;
     display: flex;
     flex-direction: column;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
 }
 
 .experience-footer{
@@ -195,9 +190,11 @@ a:visited {
 }
 
 .experience-img{
-    margin: 0 auto;
-    padding: 0;
-    width: 6vw;
+    width: 6.25rem;
+}
+
+.sase-img{
+    width: 12.5rem;
 }
 
 .experience a{
@@ -205,384 +202,89 @@ a:visited {
 }
 
 .experience-title{
-    font-size: 1.2vw;
+    font-size: 1.5rem;
 }
 
 .experience-role-title{
     margin: 0;
-    font-size: 1.2vw;
+    font-size: 1.25rem;
 }
 
 .experience-date{
     text-align: left; 
     margin: 0;
-    font-size: 0.8vw;
+    font-size: 1.12500rem;
 }
 
 .experience-description{
     text-align: left; 
-    font-size: 0.73vw;
-}
-
-.education{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
-    text-align: center;
-    background-color: #2B2D42;
-}
-
-.education-container{
-    background-color: #EDF2F4;
-    margin: 0 auto;
-    padding: 2.5vw;
-    min-height: fit-content;
-    max-height: fit-content;
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
-}
-
-.education-title{
-    font-size: 2vw;
-    color: #2B2D42;
-    text-decoration: underline;
-}
-
-.education-subtitle{
-    font-size: 1vw;
-}
-
-.major{
-    grid-row:1/span 2;
-}
-
-.education-course-title{
-    font-size: 1.3vw;
-    margin: 0;
-    text-align: left;
-}
-
-.das{
-    color: #444870;
-}
-
-.math{
-    color: #F0591A;
-}
-
-.education-logo{
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    font-size: 0.75rem;
 }
 
 .line-break{
-    border: solid 0.1vw #2B2D42;
+    border: solid 0.1vw #001524;
     width: 100%;
+
 }
 
-.divider{
-    background: #2B2D42;
-    min-height: 15vh;
-}
-
-.roboto-slab-medium,
-.bio-name,
-.section-title,
-.experience-title,
-.bio-titles,
-.education-title,
-.education-course-title,
-.education-subtitle,
-.project-content-title,
-.experience-role-title,
-.bold {
-    font-family: "Roboto Slab", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.bold{
-    font-weight: 700;
-}
-
-.roboto-slab,
-.bio-desc,
-.experience-description,
-.experience-date,
-.project-description
-{
-    font-family: "Roboto Slab", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-
-@media(max-aspect-ratio: 3/2) {
-    .bio-name {
-        font-size: 5vw;
+@media(max-aspect-ratio: 3/2){
+    .main-sidebar h1{
+        font-size: 2rem;
     }
     
-    .bio-titles{
-        font-size: 3vw;
+    .main-sidebar img{
+        width: 14rem;
     }
     
-    .bio-desc{
-        font-size: 2vw;
+    .main-sidebar p{
+        font-size: 1.3rem;
     }
     
-    .bio img {
-        width: 30%;
+    .top-left-icons img, .top-right-icons a img{
+        width: 2rem;
     }
     
-    .section-title {
-        font-size: 6vw;
-        margin-bottom: 2vh;
+    .titles h1{
+        font-size: 2rem;
     }
     
-    .projects-content {
-        display: flex;
-        flex-direction: column;
+    .class-titles h1{
+        font-size: 1.4rem;
     }
-
-    .projects-container{
-        margin-bottom: 2vh;
-        padding: 2.5vw;
+      
+    .pictures img {
+        width: 24rem;
     }
     
-    .project-content-title {
-        font-size: 3vw;
-    }
-    
-    .icons img {
-        width: 3vw;
-    }
-
-    .project-main img {
-        border-radius: 3vw;
-        width: 15vw;
-    }
-    
-    .project-description {
-        font-size: 1.7vw; 
-    }
-    
-    .project-link img{
-        width: 3vw;
-    }
-
     .experience-content{
-        flex-direction: column;
-        align-items: center;
+        gap: 1vw;
     }
     
     .experience-container {
-        width: 70%;
-        margin-bottom: 3vh;
+        width: 45%;
+    }
+    
+    .experience-img{
+        width: 3rem;
+    }
+    
+    .sase-img{
+        width: 6rem;
     }
     
     .experience-title{
-        font-size: 3.4vw;
+        font-size: 0.75rem;
     }
     
     .experience-role-title{
-        font-size: 2.7vw;
+        font-size: 0.8rem;
     }
     
     .experience-date{
-        text-align: left; 
-        font-size: 2vw;
+        font-size: 0.5rem;
     }
     
     .experience-description{
-        font-size: 1.7vw;
-    }
-    
-    .education{
-        justify-content: flex-start;
-        min-height: fit-content;
-        padding-bottom: 10vh;
-        text-align: center;
-        background-color: #2B2D42;
-    }
-    
-    .education-container{
-        display: flex;
-        justify-content: center;
-        min-height: fit-content;
-        max-height: fit-content;
-        width: 60%;
-    }
-    
-    .education-title{
-        font-size: 4vw;
-    }
-    
-    .education-subtitle{
-        font-size: 2vw;
-    }
-    
-    .education-course-title{
-        font-size: 2.4vw;
-        margin: 0;
-        text-align: left;
-    }
-
-    .icons-education img{
-        width: 3vw;
-    }
-
-    .divider{
-        min-height: 5vh;
-    }
-    
-    .line-break, .line-break-experience{
-        border: solid 0.2vw #2B2D42;
-        width: 100%;
-    }
-
-    .line-break-experience{
-        border: solid 0.2vw #EDF2F4;
-    }
-}
-
-@media only screen and (max-width: 768px){
-    a {
-        font-size: 5vw;
-    }
-    
-    header a img{
-        width: 5vw;
-    }
-
-    .bio-name {
-        font-size: 10vw;
-    }
-    
-    .bio-titles{
-        font-size: 5vw;
-    }
-    
-    .bio-desc{
-        font-size: 3vw;
-    }
-    
-    .bio img {
-        width: 50%;
-    }
-    
-    .section-title {
-        font-size: 10vw;
-        margin-bottom: 2vh;
-    }
-    
-    .projects-content {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .projects-container{
-        margin-bottom: 2vh;
-        width: 75%;
-        padding: 5vw;
-    }
-    
-    .project-content-title {
-        font-size: 4vw;
-    }
-    
-    .icons img {
-        width: 5vw;
-    }
-
-    .project-main img {
-        border-radius: 3vw;
-        width: 20vw;
-    }
-    
-    .project-description {
-        font-size: 2.4vw; 
-    }
-    
-    .project-link img{
-        width: 5vw;
-    }
-
-    .experience-content{
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .experience-container {
-        width: 90%;
-        margin-bottom: 3vh;
-    }
-    
-    .experience-title{
-        font-size: 4.3vw;
-    }
-    
-    .experience-role-title{
-        font-size: 3.5vw;
-    }
-    
-    .experience-date{
-        text-align: left; 
-        font-size: 2.2vw;
-    }
-    
-    .experience-description{
-        font-size: 2vw;
-    }
-    
-    .education{
-        justify-content: flex-start;
-        min-height: fit-content;
-        padding-bottom: 10vh;
-        text-align: center;
-        background-color: #2B2D42;
-    }
-    
-    .education-container{
-        display: flex;
-        justify-content: center;
-        min-height: fit-content;
-        max-height: fit-content;
-        width: 80%;
-    }
-    
-    .education-title{
-        font-size: 6vw;
-    }
-    
-    .education-subtitle{
-        font-size: 3vw;
-    }
-    
-    .education-course-title{
-        font-size: 3.2vw;
-        margin: 0;
-        text-align: left;
-    }
-
-    .icons-education img{
-        width: 3.6vw;
-    }
-
-    .divider{
-        min-height: 1vh;
-    }
-    
-    .line-break, .line-break-experience{
-        border: solid 0.2vw #2B2D42;
-        width: 100%;
-    }
-
-    .line-break-experience{
-        border: solid 0.2vw #EDF2F4;
+        font-size: 0.7rem;
     }
 }
