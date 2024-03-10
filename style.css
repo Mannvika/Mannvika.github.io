@@ -6,6 +6,7 @@ html, body {
 body {
     margin: 0;
     display: flex;
+    background-color: #FFECD1;
     flex-direction: column;
 }
 
@@ -40,7 +41,7 @@ h1{
     justify-content: space-around;
     align-items: center;
     width: 35%;
-    min-height: 100%;
+    min-height: 100vh;
     padding: 2rem;
     max-height: fit-content; 
     filter: drop-shadow(0px, 0px 8px rgba(0, 0, 0, 0.25));
@@ -139,6 +140,7 @@ h1{
     min-height: 100vh;
     text-align: center;
     background-color: #15616D;
+    padding-bottom: 5%;
 }
 
 .experience-main-title{
@@ -302,6 +304,12 @@ h1{
         display: contents;
     }
 
+    .experience-mobile{
+        text-align: center;
+        background-color: #FFECD1;
+        border: 2px solid red;
+    }
+
     .bio-container{
         background-color: #15616D;
     }
@@ -310,10 +318,12 @@ h1{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        min-height: fit-content;
     }
 
     .main-section h1 {
         font-size: 3rem;
+        border: solid 2px red;
     }
 
     .main-section img {
@@ -354,6 +364,7 @@ h1{
         align-items: center;
         max-height: fit-content;
         height: 75%;
+        gap: 0.2vh;
         background-color: #15616D;
         position: relative;
     }
@@ -363,7 +374,12 @@ h1{
         margin-bottom: 0;
     }
 
+    .education-container img{
+        margin-bottom: 0;
+    }
+
     .project-content{
+        padding-top: 5%;
         width: 100%;
         max-height: fit-content;
         background-color: #15616D;
@@ -380,7 +396,9 @@ h1{
     .experience-content{
         flex-direction: column;
         align-items: center;
-        gap: 1vw;        
+        gap: 1vw; 
+        padding-top: 5%;       
+        padding-bottom: 5%;       
     }
     
     .experience-container {
