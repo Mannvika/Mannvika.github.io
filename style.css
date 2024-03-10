@@ -6,7 +6,7 @@ html, body {
 body {
     margin: 0;
     display: flex;
-    background-color: #FFECD1;
+    background-color: #E8F0FF;
     flex-direction: column;
 }
 
@@ -29,7 +29,7 @@ h1{
 .main-section {
     width: 100%;
     min-height: 100vh;
-    background-color: #FFECD1;
+    background-color: #E8F0FF;
     display: flex;
     text-align: center;
     position: relative;
@@ -45,7 +45,7 @@ h1{
     padding: 2rem;
     max-height: fit-content; 
     filter: drop-shadow(0px, 0px 8px rgba(0, 0, 0, 0.25));
-    background-color: #15616D;
+    background-color: #6874E8;
 }
 
 .main-sidebar h1{
@@ -88,7 +88,7 @@ h1{
 }
 
 .top-left-icons img, .top-right-icons a img{
-    width: 2rem;
+    width: 4rem;
     flex-basis:0;
     filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.25));
 }
@@ -131,7 +131,7 @@ h1{
 .divider{
     min-width: 100%;
     min-height: 10vh;
-    background-color: #15616D;
+    background-color: #6874E8;
 }
 
 .experience {
@@ -139,8 +139,8 @@ h1{
     flex-direction: column;
     min-height: 100vh;
     text-align: center;
-    background-color: #15616D;
-    padding-bottom: 5%;
+    background-color: #6874E8;
+    padding-bottom: 1%;
 }
 
 .experience-main-title{
@@ -155,7 +155,7 @@ h1{
 
 .icons img{
     padding-left: 1vw;
-    width: 1.5rem;
+    width: 2rem;
     height: auto;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -176,7 +176,7 @@ h1{
 }
 
 .experience-container {
-    background-color: #FFECD1;
+    background-color: #E8F0FF;
     padding-left: 1.7vw;
     padding-right: 1.7vw;
     padding-bottom: 0.7vw;
@@ -185,6 +185,7 @@ h1{
     max-height: fit-content;
     width: 35%;
     display: flex;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     flex-direction: column;
 }
 
@@ -306,24 +307,22 @@ h1{
 
     .experience-mobile{
         text-align: center;
-        background-color: #FFECD1;
-        border: 2px solid red;
+        background-color: #6874E8;
     }
 
     .bio-container{
-        background-color: #15616D;
+        background-color: #6874E8;
     }
 
     .main-section{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        min-height: fit-content;
+        min-height: 100vh;
     }
 
     .main-section h1 {
         font-size: 3rem;
-        border: solid 2px red;
     }
 
     .main-section img {
@@ -365,7 +364,7 @@ h1{
         max-height: fit-content;
         height: 75%;
         gap: 0.2vh;
-        background-color: #15616D;
+        background-color: #6874E8;
         position: relative;
     }
 
@@ -382,7 +381,7 @@ h1{
         padding-top: 5%;
         width: 100%;
         max-height: fit-content;
-        background-color: #15616D;
+        background-color: #6874E8;
     }
 
     .project-content p{
